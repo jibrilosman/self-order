@@ -68,7 +68,7 @@ const Review = () => {
         >
           <CardMedia
             component="img"
-            image={`http://localhost:5000/images/${product.image}`}
+            image={`https://self-order-klda.onrender.com/images/${product.image}`}
             alt={product.name}
             className={styles.center}
           />

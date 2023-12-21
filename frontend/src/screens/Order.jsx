@@ -58,7 +58,7 @@ const Order = () => {
  
   const fetchCategories = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/categories");
+      const response = await fetch("https://self-order-klda.onrender.com/api/categories");
       const data = await response.json();
       setCategories(data);
     } catch (error) {
@@ -68,7 +68,7 @@ const Order = () => {
 
   const fetchProducts = async (categoryName) => {
     try {
-      let apiUrl = "http://localhost:5000/api/products";
+      let apiUrl = "https://self-order-klda.onrender.com/api/products";
 
       if (categoryName) {
         apiUrl += `?category=${categoryName}`;
@@ -138,7 +138,7 @@ const shuffleArray = (array) => {
       >
         <CardMedia
           component="img"
-          image={`http://localhost:5000/images/${product.image}`}
+          image={`https://self-order-klda.onrender.com/images/${product.image}`}
           alt={product.name}
           className={styles.center}
         />
@@ -225,7 +225,7 @@ const shuffleArray = (array) => {
                     <CardActionArea>
                       <CardMedia
                         component="img"
-                        image={`http://localhost:5000/images/${category.image}`}
+                        image={`https://self-order-klda.onrender.com/images/${category.image}`}
                         alt={category.name}
                         className={styles.media}
                       />
@@ -268,7 +268,7 @@ const shuffleArray = (array) => {
                         <CardMedia
                           component="img"
                           alt={product.name}
-                          image={`http://localhost:5000/images/${product.image}`}
+                          image={`https://self-order-klda.onrender.com/images/${product.image}`}
                           className={styles.media}
                           style={{ margin: "0 auto" }}
                         />
