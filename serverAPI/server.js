@@ -30,7 +30,7 @@ db.on('error', (error) => console.log(error));
 db.once('open', () => console.log('Connected to Database'));
 
 
-app.get('/api/', (req, res) => {
+app.get('/api', (req, res) => {
     res.send('Hello World');
 });
 
