@@ -326,7 +326,7 @@ const shuffleArray = (array) => {
           <button
             onClick={() => {
               clearOrder(dispatch);
-              navigate("/order");
+              navigate("/dinelocation");
             }}
             variant="contained"
             // size="large"
