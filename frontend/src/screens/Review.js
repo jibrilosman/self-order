@@ -197,7 +197,7 @@ const Review = () => {
                         component="h2"
                         className={[styles.title, styles.catPrice]}
                       >
-                        {orderItem.quantity * orderItem.price}
+                        $ {orderItem.quantity * orderItem.price}
                       </Typography>
                     </Box>
                   </CardContent>
