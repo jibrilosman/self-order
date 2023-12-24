@@ -84,7 +84,6 @@ export const useStyles = makeStyles((theme) => ({
         height: '100px',
       },
       catBG: {
-        height: '100%',
         backgroundColor: '#FFE600',
         background: `url(${CatBG}) no-repeat`,
         backgroundSize: 'cover',
