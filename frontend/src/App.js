@@ -30,7 +30,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <CssBaseline />
-        <Container maxWidth="md">
+        <Container maxWidth="sm">
           <Paper>
             <Routes>
               <Route path="/" Component={HomeScreen} />
